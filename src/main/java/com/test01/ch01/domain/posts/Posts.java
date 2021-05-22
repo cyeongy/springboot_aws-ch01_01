@@ -1,6 +1,5 @@
 package com.test01.ch01.domain.posts;
 
-import jdk.jfr.Enabled;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -29,5 +28,10 @@ public class Posts {
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(String title, String content){
+        this.title = title;
+        this.content = content;
     }
 }

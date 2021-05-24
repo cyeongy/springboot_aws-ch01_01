@@ -40,7 +40,7 @@ public class PostsApiControllerTest {
     }
 
     @Test
-    public void test_Post() throws Exception {
+    public void Posts_save() throws Exception {
         String title = "title";
         String content = "content";
 
@@ -63,12 +63,12 @@ public class PostsApiControllerTest {
     }
 
     @Test
-    public void Posts_update() throws Exception{
+    public void Posts_update() throws Exception {
         Posts savePosts = postsRepository.save(Posts.builder()
-        .title("title")
-        .content("content")
-        .author("author")
-        .build());
+                .title("title")
+                .content("content")
+                .author("author")
+                .build());
 
         Long updateId = savePosts.getId();
         String expectedTitle = "title2";

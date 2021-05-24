@@ -1,6 +1,7 @@
 package com.test01.ch01.web;
 
 import com.test01.ch01.service.posts.PostsService;
+import com.test01.ch01.web.dto.PostsResponseDto;
 import com.test01.ch01.web.dto.PostsSaveRequestDto;
 import com.test01.ch01.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
@@ -19,5 +20,10 @@ public class PostsApiController {
     @PutMapping("/api/v1/posts/{id}")
     public Long update(@PathVariable Long id, @RequestBody PostsUpdateRequestDto requestDto){
         return postsService.update(id, requestDto);
+    }
+
+    @GetMapping("/api/v1/posts/{id}")
+    public PostsResponseDto findById (@PathVariable Long id){
+        return postsService.findById(id);
     }
 }

@@ -20,6 +20,8 @@ public class IndexControllerTest {
     public void index_test(){
         String body = this.restTemplate.getForObject("/", String.class);
         System.out.println(">>>>> body: "+body);
+
         assertThat(body).contains("스프링 부트로 시작하는 웹 서비스");
     }
 }
+

@@ -6,7 +6,7 @@ var main = {
         });
 
         $('#btn-update').on('click', function (){
-            _this.save();
+            _this.update();
         })
 
     },

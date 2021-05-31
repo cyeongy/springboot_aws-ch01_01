@@ -29,7 +29,7 @@ var main = {
         }).fail(function (error){
             alert(JSON.stringify(error));
         });
-    }
+    },
 
     update: function (){
         var data = {

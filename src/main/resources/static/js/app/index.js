@@ -9,12 +9,9 @@ var main = {
             _this.update();
         })
 
-        $('#btn-delete').on('click', funtion()
-        {
+        $('#btn-delete').on('click', function () {
             _this.delete();
-        }
-    )
-
+        })
     },
     save: function () {
         var data = {
@@ -70,7 +67,7 @@ var main = {
         }).done(function () {
             alert('글이 삭제되었습니다.');
             window.location.href = '/';
-        }).fail(function (error){
+        }).fail(function (error) {
             alert(JSON.stringify(error));
         })
     }

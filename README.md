@@ -4,3 +4,6 @@ main_dir = "./src/main/java/com/test01/ch01/"
 test_dir = "./src/test/java/com/test01/ch01/"
 js_dir = "./src/resources/static/"
 layout_dir= = "./src/resources/templates/layout"
+
+
+mustache 사용

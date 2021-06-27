@@ -10,3 +10,5 @@ layout_dir= = "./src/resources/templates/layout"
 
 
 mustache 사용
+
+oauth2 config 
